@@ -2,7 +2,8 @@ body {
   font-style: italic;
 }
 
-ol li {
+ol,
+li {
   color: blue;
   background-color: chartreuse;
 }
@@ -10,17 +11,38 @@ ol li {
 div > h1 {
   color: red;
 }
-
-div ~ p {
-  color: violet;
+#inicio {
+  font: oblique bold 250% cursive;
+}
+h1 + h2 {
+  color: rgb(11, 7, 221);
 }
 
-.segundoDiv + h3 {
+div ~ h3 {
   font-style: oblique;
-  color: turquoise;
+  color: rgb(255, 43, 184);
 }
 p.destacado {
   color: green;
   font-style: normal;
   font-size: 18px;
+}
+p .destacado {
+  color: red;
+}
+ul li {
+  color: black !important;
+}
+.link {
+  color: brown;
+}
+.link:hover {
+  color: chartreuse;
+  font-size: 16px;
+}
+.link:visited {
+  color: darkblue;
+}
+.link:active {
+  color: darkorange;
 }
